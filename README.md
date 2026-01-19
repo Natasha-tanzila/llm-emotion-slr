@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="LLM_EMOTION_SLR.png" width="800">
+</p>
+
+
 # Emotion Detection with Large Language Models: Systematic Review
 
 This repository accompanies the paper:
