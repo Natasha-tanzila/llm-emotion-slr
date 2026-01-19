@@ -43,7 +43,6 @@ emotion detection methods published between **2015–2025**, focusing on:
 
 ### `appendix/`
 All appendix materials referenced in the paper, including:
-- Full study lists
 - Dataset inventories
 - Extraction templates
 - Computation and normalization details
@@ -54,8 +53,6 @@ High-resolution versions of all figures used in the paper.
 ### `scripts/`
 Python scripts used for:
 - Average text-length computation
-- Δ-score calculation
-- Figure generation
 
 ### `docs/`
 Supplementary documentation (data dictionaries, variable descriptions).
