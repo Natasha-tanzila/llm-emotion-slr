@@ -1,0 +1,14 @@
+import json
+
+# Path to your file
+file_path = '/content/combined.json'  # Change to match your file name
+
+# Read JSON lines (assuming each line is a JSON object)
+with open(file_path, 'r', encoding='utf-8') as f:
+    data = [json.loads(line) for line in f]
+
+# Calculate average word count per text entry (e.g., 'text' field)
+word_counts = [len(item['text'].split()) for item in data if 'text' in item]
+average_words = sum(word_counts) / len(word_counts)
+
+print("Average words per entry:", round(average_words, 2))
