@@ -1,0 +1,13 @@
+from datasets import load_dataset
+
+ds = load_dataset("israelfama/semeval2007_task_14")
+
+# Combine all splits if needed (train, test, validation)
+all_texts = []
+for split in ds.keys():
+    all_texts.extend(ds[split]['text'])  # Adjust 'text' if the column name is different
+
+# Compute average word count per entry
+avg_words = sum(len(str(x).split()) for x in all_texts) / len(all_texts)
+
+print("Average words per content entry:", round(avg_words, 2))
