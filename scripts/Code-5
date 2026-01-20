@@ -1,0 +1,14 @@
+from datasets import load_dataset
+
+# Load the dataset
+ds = load_dataset("oneonlee/cleansed_emocontext", split="train")
+
+# Function to compute average word count per turn
+def avg_words(turn):
+    non_null_entries = [x for x in ds[turn] if x is not None]
+    return sum(len(x.split()) for x in non_null_entries) / len(non_null_entries)
+
+# Compute and print average word counts
+print("Average words in Turn1:", avg_words("turn1"))
+print("Average words in Turn2:", avg_words("turn2"))
+print("Average words in Turn3:", avg_words("turn3"))
