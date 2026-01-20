@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Load your own dataset (uploaded to Colab)
+df = pd.read_csv("/content/k.csv")  # Replace with your actual file name
+
+# Preview column names to confirm the text column
+print("Available columns:", df.columns)
+
+# Assuming your text column is named 'content'
+avg_words = df['Text'].astype(str).apply(lambda x: len(x.split())).mean()
+
+print("Average words per content entry:", round(avg_words, 2))
