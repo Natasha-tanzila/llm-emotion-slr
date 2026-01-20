@@ -42,8 +42,8 @@ emotion detection methods published between **2015–2025**, focusing on:
   (taxonomy mappings, length grouping, Δ-score computation)
 
 ### `results/`
--raw table for result section-2 (Δ normalization)
--raw table for result section-3 (challenges study-wise)
+- raw table for result section-2 (Δ normalization)
+- raw table for result section-3 (challenges study-wise)
 
 ### `appendix/`
 All appendix materials referenced in the paper, including:
