@@ -1,0 +1,25 @@
+import json
+import re
+
+# Load the JSON file
+with open("/content/emotion-detection-trn.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+total_words = 0
+utterance_count = 0
+
+# Loop through all utterances in all scenes and episodes
+for episode in data.get("episodes", []):
+    for scene in episode.get("scenes", []):
+        for utt in scene.get("utterances", []):
+            transcript = utt.get("transcript", "")
+            word_count = len(re.findall(r'\b\w+\b', transcript))
+            total_words += word_count
+            utterance_count += 1
+
+# Calculate average
+average_words = total_words / utterance_count if utterance_count > 0 else 0
+
+print(f"Total utterances: {utterance_count}")
+print(f"Total words: {total_words}")
+print(f"Average words per transcript: {average_words:.2f}")
