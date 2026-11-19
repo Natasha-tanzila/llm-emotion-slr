@@ -23,7 +23,7 @@ This repository supports a **systematic literature review (SLR)** of LLM-based
 emotion detection methods published between **2015–2025**, focusing on:
 
 - Emotion taxonomy coverage (Basic, Composite, Complex)
-- Dataset-centric analysis across **55 benchmark datasets**
+- Dataset-centric analysis across **57 benchmark datasets**
 - Length-wise performance behaviour of LLMs
 - Delta-based normalization against BERT-family baselines
 - Explicit extraction of technical and conceptual limitations
