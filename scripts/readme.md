@@ -15,7 +15,7 @@
   <img src="assets/demo.gif" alt="Running a length script in the terminal" width="680">
 </p>
 
----
+scripts/demo.gif
 
 ## 💡 Why this exists
 
