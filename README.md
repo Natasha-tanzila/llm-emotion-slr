@@ -2,14 +2,13 @@
   <img src="LLM_EMOTION_SLR.png" width="800">
 </p>
 
-
-# Emotion Detection with Large Language Models: Systematic Review
+# Emotion Detection with LLMs: A Dataset-Centric Systematic Review
 
 This repository accompanies the paper:
 
-> **Emotion Detection with Large Language Models: A Systematic Literature Review**  
-> Natasha Tanzila Monalisa, Ranesh Naha, Alistair Barros  
-> (Under review / Published in [Journal Name], Year)
+> **Emotion Detection with LLMs: A Dataset-Centric Systematic Review Revealing Taxonomy Bias and Text-Length Effects**  
+> Natasha Tanzila Monalisa, Ranesh Naha, Alistair Barros, James Hughes  
+> Under review at *Artificial Intelligence Review*
 
 The repository provides **all non-proprietary materials** required to reproduce,
 inspect, and extend the dataset-level and taxonomy-grounded analyses presented in
@@ -19,46 +18,37 @@ the paper.
 
 ## 📌 Scope of the Repository
 
-This repository supports a **systematic literature review (SLR)** of LLM-based
-emotion detection methods published between **2015–2025**, focusing on:
+This repository supports a **systematic literature review (SLR)** of **88 studies** on
+LLM-based emotion detection published between **2015–2026**, focusing on:
 
 - Emotion taxonomy coverage (Basic, Composite, Complex)
 - Dataset-centric analysis across **57 benchmark datasets**
 - Length-wise performance behaviour of LLMs
-- Delta-based normalization against BERT-family baselines
+- Δ-based normalisation against same-study BERT-family baselines
 - Explicit extraction of technical and conceptual limitations
+
+The review protocol is registered on OSF: https://doi.org/10.17605/OSF.IO/736NS
 
 ---
 
 ## 📂 Repository Contents
 
 ### `data/`
-- **raw/**  
-  Original extracted tables from reviewed studies  
-  (paper metadata, datasets, emotion labels, quality appraisal)
-
-- **processed/**  
-  Cleaned and derived tables used in figures and analysis  
-  (taxonomy mappings, length grouping, Δ-score computation)
+- **Data_extraction_88_studies.xlsx**: extraction records for all 88 included studies
+  (study details, models, datasets, emotion labels and taxonomy codes, performance
+  metrics, stated challenges, quality appraisal)
 
 ### `results/`
-- raw table for result section-2 (Δ normalization)
-- raw table for result section-3 (challenges study-wise)
+- **bert_family_share_rows.csv**: the 133 study–dataset–metric rows behind the
+  BERT-family share and the Δ synthesis (Sect. 4.3.2)
 
 ### `appendix/`
-All appendix materials referenced in the paper, including:
-- search strategy
-- Quality Appraisal
-
-### `figures/`
-High-resolution versions of all figures used in the paper.
+- search strings and source-specific search fields (Sect. 3.3, Appendix Table 11)
+- quality appraisal scores for all 88 studies (Sect. 3.6, Appendix Table 12)
 
 ### `scripts/`
-Python scripts used for:
-- Average text-length computation
-
-### `docs/`
-Supplementary documentation (data dictionaries, variable descriptions).
+Python scripts used to compute the average text lengths in Table 2
+(see `scripts/README.md`).
 
 ---
 
@@ -76,9 +66,11 @@ Supplementary documentation (data dictionaries, variable descriptions).
 If you use this repository, **please cite the paper**:
 
 ```bibtex
-@article{Monalisa2025EmotionLLMSLR,
-  title   = {Emotion Detection with Large Language Models: A Systematic Review},
-  author  = {Monalisa, Natasha Tanzila and Naha, Ranesh and Barros, Alistair},
-  journal = {TBD},
-  year    = {2025}
+@article{Monalisa2026EmotionLLMSLR,
+  title   = {Emotion Detection with LLMs: A Dataset-Centric Systematic Review Revealing Taxonomy Bias and Text-Length Effects},
+  author  = {Monalisa, Natasha Tanzila and Naha, Ranesh and Barros, Alistair and Hughes, James},
+  journal = {-------------------},
+  note    = {Under review},
+  year    = {2026}
 }
+```
