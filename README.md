@@ -36,7 +36,7 @@ The review protocol is registered on OSF: https://doi.org/10.17605/OSF.IO/736NS
 - **Prisma checklist 2020.doc**: updated PRISMA checklist to guide the SLR reader.
 
 ### `data/`
-- **Data extraction.xlsx**: extraction records for all 88 included studies
+- **Data_extraction.xlsx**: extraction records for all 88 included studies
   (study details, models, datasets, emotion labels and taxonomy codes, performance
   metrics, stated challenges, quality appraisal)
 
