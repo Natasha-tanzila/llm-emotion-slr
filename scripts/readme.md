@@ -12,10 +12,10 @@
 </p>
 
 <p align="center">
-  <img src="scripts/demo.gif" alt="Running a length script in the terminal" width="680">
+  <img src="demo.gif" alt="Running a length script in the terminal" width="680">
 </p>
 
-<img src="scripts/demo.gif" alt="Running a length script in the terminal" width="680">
+<img src="demo.gif" alt="Running a length script in the terminal" width="680">
 
 ## 💡 Why this exists
 
