@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Running a length script in the terminal" width="680">
+  <img src="scripts/demo.gif" alt="Running a length script in the terminal" width="680">
 </p>
 
 <img src="scripts/demo.gif" alt="Running a length script in the terminal" width="680">
