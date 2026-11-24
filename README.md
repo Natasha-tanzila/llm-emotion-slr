@@ -32,6 +32,8 @@ The review protocol is registered on OSF: https://doi.org/10.17605/OSF.IO/736NS
 ---
 
 ## 📂 Repository Contents
+### `Prisma checklist 2020/`
+- **Prisma checklist 2020.doc**: updated PRISMA checklist to guide the SLR reader.
 
 ### `data/`
 - **Data_extraction_88_studies.xlsx**: extraction records for all 88 included studies
